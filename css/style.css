@@ -1,0 +1,143 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.listing {
+    margin: 50px 0;
+    text-align: center;
+}
+
+.processes .phases {
+    display: table;
+    width: 100%;
+    margin-top: 50px;
+    table-layout: fixed;
+}
+
+.processes .phases ol {
+    list-style-type: none;
+    margin: 20px 0;
+    background: #aef6d6;
+    display: table-row;
+}
+
+.processes .phases ol li {
+    position: relative;
+    display: table-cell;
+    padding: 60px 0;
+}
+
+.processes .phases ol li:nth-child(1)::before {
+    content: "1";
+    font-family: sans-serif;
+}
+
+.processes .phases ol li:nth-child(2)::before {
+    content: "2";
+    font-family: sans-serif;
+}
+
+.processes .phases ol li:nth-child(3)::before {
+    content: "3";
+    font-family: sans-serif;
+}
+
+/* To display the number of each list at the top of the item */
+.phases li:before {
+    position: absolute;
+    top: 0;
+    right: auto;
+    bottom: auto;
+    left: 50%;
+    width: 40px;
+    height: 40px;
+    background: #ffffff;
+    border: 3px solid #0E9D4B;
+    margin: -20px 0 0 -25px;
+    font-size: 28px;
+    font-weight: normal;
+    line-height: 40px;
+    border-radius: 40px
+}
+
+/* To display the arrow after each item of the list */
+.phases ol li::after {
+    content: "\003e";
+    font-family: sans-serif;
+    font-weight: bolder;
+    color: #0E9D4B;
+    position: absolute;
+    top: 35%;
+    right: 10%;
+    bottom: auto;
+    left: auto;
+    font-size: 30px;
+}
+
+.processes .phases ol li:last-child::after {
+    display: none;
+}
+
+.processes p {
+    margin: 0;
+    padding: 30px 0;
+    width: 100%;
+    background: #0E9D4B;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 0 0 10px 10px;
+}
+
+.processes p:before {
+    content: '\f0d7';
+    font-family: "fontawesome", sans-serif;
+    font-size: 40px;
+    position: absolute;
+    top: 240px;
+    left: 50%;
+    color: #aef6d6;
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    margin: auto auto;
+    border: 20px solid transparent;
+    border-top: 20px solid #E7F6EE;
+}
+
+@media all and (max-width: 840px) {
+
+
+    .processes, .listing, .container {
+        width: 100% !important;
+        display: block;
+    }
+
+    .processes .phases ol {
+        margin: 0;
+        width: 100% !important;
+    }
+
+    .processes .phases ol li {
+        display: block;
+        width: 100%;
+        padding: 60px 0;
+    }
+
+
+    .phases ol li::after {
+        display: none;
+    }
+
+    .processes p {
+        font-size: 18px;
+    }
+
+    .processes p:before {
+        display: none;
+    }
+
+}
