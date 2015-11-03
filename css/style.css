@@ -28,17 +28,17 @@
     padding: 60px 0;
 }
 
-.processes .phases ol li:nth-child(1)::before {
+.processes .phases ol li:nth-child(1):before {
     content: "1";
     font-family: sans-serif;
 }
 
-.processes .phases ol li:nth-child(2)::before {
+.processes .phases ol li:nth-child(2):before {
     content: "2";
     font-family: sans-serif;
 }
 
-.processes .phases ol li:nth-child(3)::before {
+.processes .phases ol li:nth-child(3):before {
     content: "3";
     font-family: sans-serif;
 }
@@ -62,7 +62,7 @@
 }
 
 /* To display the arrow after each item of the list */
-.phases ol li::after {
+.phases ol li:after {
     content: "\003e";
     font-family: sans-serif;
     font-weight: bolder;
@@ -75,7 +75,7 @@
     font-size: 30px;
 }
 
-.processes .phases ol li:last-child::after {
+.processes .phases ol li:last-child:after {
     display: none;
 }
 
@@ -128,7 +128,7 @@
     }
 
 
-    .phases ol li::after {
+    .phases ol li:after {
         display: none;
     }
 
